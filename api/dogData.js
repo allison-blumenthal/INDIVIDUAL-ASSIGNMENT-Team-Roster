@@ -3,7 +3,7 @@ import { clientCredentials } from '../utils/client';
 // API CALLS FOR DOGS
 const dbUrl = clientCredentials.databaseURL;
 
-// GET BOOKS
+// GET DOGS
 const getDogs = (uid) => new Promise((resolve, reject) => {
   fetch(`${dbUrl}/DOGS.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -62,7 +62,7 @@ const createDog = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// UPDATE BOOK
+// UPDATE DOG
 const updateDog = (payload) => new Promise((resolve, reject) => {
   fetch(`${dbUrl}/dogs/${payload.firebaseKey}.json`, {
     method: 'PATCH',
