@@ -1,0 +1,72 @@
+{
+  "-NMKqFHT9ZTQ-Tan1GWz": {
+    "firebaseKey": "-NMKqFHT9ZTQ-Tan1GWz",
+    "name":"Griffin",
+    "image":"http://dummyimage.com/173x100.png/dddddd/000000",
+    "characteristics":"Inverse",
+    "uid": ""
+  },
+  "-NMKqFHWDRanbAeIXNq-": {
+    "firebaseKey": "-NMKqFHWDRanbAeIXNq-",
+    "name":"Quillan",
+    "image":"http://dummyimage.com/234x100.png/cc0000/ffffff",
+    "characteristics":"content-based",
+    "uid": ""
+  },
+  "-NMKqFHYxm8eVPNyQ5sM": {
+    "firebaseKey": "-NMKqFHYxm8eVPNyQ5sM",
+    "name":"Iosep",
+    "image":"http://dummyimage.com/221x100.png/cc0000/ffffff",
+    "characteristics":"cohesive",
+    "uid": ""
+  },
+  "-NMKqFH_WUyyzDBw7Ptf": {
+    "firebaseKey": "-NMKqFH_WUyyzDBw7Ptf",
+    "name":"Anthiathia",
+    "image":"http://dummyimage.com/177x100.png/cc0000/ffffff",
+    "characteristics":"matrix",
+    "uid": ""
+  },
+  "-NMKqFHb8Jl9tlXLiyFj": {
+    "firebaseKey": "-NMKqFHb8Jl9tlXLiyFj",
+    "name":"Pauly",
+    "image":"http://dummyimage.com/222x100.png/5fa2dd/ffffff",
+    "characteristics":"hierarchy",
+    "uid": ""
+  },
+  "-NMKqFHdmVs0lYFQ60lq": {
+    "firebaseKey": "-NMKqFHdmVs0lYFQ60lq",
+    "name":"Katrina",
+    "image":"http://dummyimage.com/152x100.png/ff4444/ffffff",
+    "characteristics":"composite",
+    "uid": ""
+  },
+  "-NMKqFHfeKXsfKXGy7kb": {
+    "firebaseKey": "-NMKqFHfeKXsfKXGy7kb",
+    "name":"Hedy",
+    "image":"http://dummyimage.com/170x100.png/ff4444/ffffff",
+    "characteristics":"help-desk",
+    "uid": ""
+  },
+  "-NMKqFHhRn9R42dc0Wqw": {
+    "firebaseKey": "-NMKqFHhRn9R42dc0Wqw",
+    "name":"Joshua",
+    "image":"http://dummyimage.com/202x100.png/dddddd/000000",
+    "characteristics":"Business-focused",
+    "uid": ""
+  },
+  "-NMKqFHktVZ0Eo5AKtG0": {
+    "firebaseKey": "-NMKqFHktVZ0Eo5AKtG0",
+    "name":"Fidel",
+    "image":"http://dummyimage.com/176x100.png/cc0000/ffffff",
+    "characteristics":"full-range",
+    "uid": ""
+  },
+  "-NMKqFHmanTQBT65gTWu": {
+    "firebaseKey": "-NMKqFHmanTQBT65gTWu",
+    "name":"Con",
+    "image":"http://dummyimage.com/151x100.png/cc0000/ffffff",
+    "characteristics":"Pre-emptive",
+    "uid": ""
+  }
+}
