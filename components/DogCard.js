@@ -14,7 +14,7 @@ function DogCard({ dogObj, onUpdate }) {
   return (
     <>
       <Card style={{ width: '18rem', margin: '10px' }}>
-        <Card.Img variant="top" src={dogObj.image} alt={dogObj.name} style={{ height: '400px' }} />
+        <Card.Img variant="top" src={dogObj.image} alt={dogObj.name} style={{ height: '200px' }} />
         <Card.Body>
           <Card.Title>{dogObj.name}</Card.Title>
           <p className="card-text bold">{dogObj.characteristics}</p>
