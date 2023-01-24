@@ -48,7 +48,7 @@ function DogForm({ dogObj }) {
   return (
     <>
       <Form onSubmit={handleSubmit}>
-        <h2 className="text-white mt-5">{dogObj.firebaseKey ? 'Update' : 'Add'} Dog</h2>
+        <h1 className="text-white mt-5">{dogObj.firebaseKey ? 'Update' : 'New'} Dog</h1>
 
         <FloatingLabel controlId="floatingInput1" label="Dog's Name" className="mb-3">
           <Form.Control

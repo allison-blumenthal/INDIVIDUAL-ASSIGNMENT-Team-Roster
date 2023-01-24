@@ -22,6 +22,7 @@ export default function ShowOurDogs() {
       <Head>
         <title>LuckyDog Daycare</title>
       </Head>
+      <h1>LuckyDog Daycare Doggos</h1>
       <div className="d-flex flex-wrap">
         {dogs.map((dog) => (
           <DogCard key={dog.firebaseKey} dogObj={dog} onUpdate={getAllTheDogs} />
