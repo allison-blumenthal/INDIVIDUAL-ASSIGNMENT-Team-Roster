@@ -1,33 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
-import { getDogs } from '../api/dogData';
-import { useAuth } from '../utils/context/authContext';
-import DogCard from '../components/DogCard';
+import React from 'react';
+import Link from 'next/link';
+import { Button } from 'react-bootstrap';
 
 function Home() {
-  const [dogs, setDogs] = useState([]);
-
-  const { user } = useAuth();
-
-  const getAllTheDogs = () => {
-    getDogs(user.uid).then(setDogs);
-  };
-
-  useEffect(() => {
-    getAllTheDogs();
-  }, []);
-
   return (
-    <>
-      <Head>
-        <title>LuckyDog Daycare</title>
-      </Head>
-      <div className="d-flex flex-wrap">
-        {dogs.map((dog) => (
-          <DogCard key={dog.firebaseKey} dogObj={dog} onUpdate={getAllTheDogs} />
-        ))}
-      </div>
-    </>
+    <div
+      className="text-center d-flex flex-column justify-content-center align-content-center"
+      style={{
+        height: '90vh',
+        padding: '30px',
+        maxWidth: '400px',
+        margin: '0 auto',
+      }}
+    >
+      <h1>Welcome to LuckyDogs Daycare!</h1>
+      <h2>Click below to see our awesome dogs!</h2>
+      <Link href="/ourdogs" passHref>
+        <Button>Our Dogs</Button>
+      </Link>
+    </div>
   );
 }
 
