@@ -5,7 +5,7 @@ const dbUrl = clientCredentials.databaseURL;
 
 // GET DOGS
 const getDogs = (uid) => new Promise((resolve, reject) => {
-  fetch(`${dbUrl}/DOGS.json?orderBy="uid"&equalTo="${uid}"`, {
+  fetch(`${dbUrl}/dogs.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
