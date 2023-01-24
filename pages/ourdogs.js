@@ -15,7 +15,7 @@ export default function ShowOurDogs() {
 
   useEffect(() => {
     getAllTheDogs();
-  }, []);
+  });
 
   return (
     <>
