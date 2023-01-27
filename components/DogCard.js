@@ -18,6 +18,8 @@ function DogCard({ dogObj, onUpdate }) {
         <Card.Body>
           <Card.Title>{dogObj.name}</Card.Title>
           <p className="card-text bold">{dogObj.characteristics}</p>
+          <h6>{dogObj.team_id}</h6>
+
           <Link href={`/dog/edit/${dogObj.firebaseKey}`} passHref>
             <Button variant="info">EDIT</Button>
           </Link>
@@ -35,6 +37,7 @@ DogCard.propTypes = {
     name: PropTypes.string,
     characteristics: PropTypes.string,
     firebaseKey: PropTypes.string,
+    team_id: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
