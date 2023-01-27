@@ -15,6 +15,7 @@ export default function ShowOurDogs() {
   const [dogs, setDogs] = useState([]);
   const [query, setQuery] = useState('');
   const { user } = useAuth();
+  const filteredDogs = getSearchDogs(query, dogs);
 
   const getAllTheDogs = () => {
     getDogs(user.uid).then(setDogs);
@@ -23,8 +24,6 @@ export default function ShowOurDogs() {
   useEffect(() => {
     getAllTheDogs();
   }, []);
-
-  const filteredDogs = getSearchDogs(query, dogs);
 
   return (
     <>
