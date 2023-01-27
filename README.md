@@ -2,6 +2,8 @@ Netlify app site: https://team-roster-blumenthal.netlify.app
 
 Provided ERD: (https://user-images.githubusercontent.com/29741570/180609833-7f231bf4-42a5-4f0a-b8b1-fae1c78cffc4.png)
 
+Stretch 2 ERD: (https://www.figma.com/file/r4FaDh7vAL6DepnJopP8UV/Team-Roster-Stretch2-ERD?node-id=0%3A1&t=sb0H8Hc9ewKdBfx0-1)
+
 Wireframe: 
 (https://www.figma.com/file/M6kBcjfsQ9zfkCxx5aGLJy/Team-Roster-DoggieDaycare?node-id=0%3A1&t=9twdA9KkbZMHAmG3-1)
 
