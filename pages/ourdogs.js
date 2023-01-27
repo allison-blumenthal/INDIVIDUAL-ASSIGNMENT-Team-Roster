@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useAuth } from '../utils/context/authContext';
 import DogCard from '../components/DogCard';
 import { getDogs } from '../api/dogData';
-// import SearchBar from '../components/SearchBar';
 
 export default function ShowOurDogs() {
   const [dogs, setDogs] = useState([]);
