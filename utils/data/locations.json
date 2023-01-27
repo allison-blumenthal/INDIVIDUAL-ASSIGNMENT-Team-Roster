@@ -1,20 +1,20 @@
 {
   "-NMo49qbwra67owAFHjA": {
     "firebaseKey": "-NMo49qbwra67owAFHjA",
-    "team-name": "Goldenrod",
-    "team-image": "http://dummyimage.com/191x100.png/dddddd/000000",
+    "location_name": "Goldenrod",
+    "location_image": "http://dummyimage.com/191x100.png/dddddd/000000",
     "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
   },
   "-NMo49qdP93JP1vKGZlr": {
     "firebaseKey": "-NMo49qdP93JP1vKGZlr",
-    "team-name": "Violet",
-    "team-image": "http://dummyimage.com/205x100.png/5fa2dd/ffffff",
+    "location_name": "Violet",
+    "location_image": "http://dummyimage.com/205x100.png/5fa2dd/ffffff",
     "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
   },
   "-NMo49qezsxkrjvhne96": {
     "firebaseKey": "-NMo49qezsxkrjvhne96",
-    "team-name": "Teal",
-    "team-image": "http://dummyimage.com/222x100.png/5fa2dd/ffffff",
+    "location_name": "Teal",
+    "location_image": "http://dummyimage.com/222x100.png/5fa2dd/ffffff",
     "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
   }
 }

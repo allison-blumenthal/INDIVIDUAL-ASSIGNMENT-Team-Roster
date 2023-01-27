@@ -2,9 +2,17 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import { deleteDog } from '../api/dogData';
+import viewDogDetails from '../api/mergedData';
 
-function DogCard({ dogObj, onUpdate }) {
+export default function DogCard({ dogObj, onUpdate }) {
+  const [dogDetails, setDogDetails] = useState([]);
+
+  useEffect(() => {
+    viewDogDetails().then(setDogDetails);
+  }, []);
+
   const deleteThisDog = () => {
     if (window.confirm(`Delete ${dogObj.name}?`)) {
       deleteDog(dogObj.firebaseKey).then(() => onUpdate());
@@ -18,8 +26,7 @@ function DogCard({ dogObj, onUpdate }) {
         <Card.Body>
           <Card.Title>{dogObj.name}</Card.Title>
           <p className="card-text bold">{dogObj.characteristics}</p>
-          <h6>{dogObj.team_id}</h6>
-
+          <h6> {dogDetails.locationObj?.location_name}</h6>
           <Link href={`/dog/edit/${dogObj.firebaseKey}`} passHref>
             <Button variant="info">EDIT</Button>
           </Link>
@@ -37,9 +44,10 @@ DogCard.propTypes = {
     name: PropTypes.string,
     characteristics: PropTypes.string,
     firebaseKey: PropTypes.string,
-    team_id: PropTypes.string,
+    location_id: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
+  locationObj: PropTypes.shape({
+    location_name: PropTypes.string,
+  }).isRequired,
 };
-
-export default DogCard;
