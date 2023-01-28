@@ -34,8 +34,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #login-btn {
-  background-color: #A3B18A;
-  border: #A3B18A;
+  background-color: #2b9348;
+  border: #2b9348;
+  color: white;
 }
 
 #logout-btn {
@@ -45,8 +46,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #dogs-btn, #new-dogs-btn {
-  background-color: #F4A261;
-  border: #F4A261;
+  background-color: #fb8500;
+  border: #fb8500;
   color: white;
 }
 
@@ -56,22 +57,28 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-#dogs-btn:hover, #locations-btn:hover, #new-dogs-btn:hover, #new-location-btn:hover,  #login-btn:hover, #logout-btn:hover {
-  background-color: black;
+#dogs-btn:hover, #locations-btn:hover, #new-dogs-btn:hover, #new-location-btn:hover, #logout-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#login-btn:hover {
+  background-color: white;
+  color: black;
 }
 
 
 .view-btn {
   margin: 10px;
-  background-color: #A3B18A;
-  border: #A3B18A;
+  background-color: #2b9348;
+  border: #2b9348;
   color: white;
 }
 
 .edit-btn {
   margin: 10px;
-  background-color: #F4A261;
-  border: #F4A261;
+  background-color: #fb8500;
+  border: #fb8500;
   color: white;
 }
 

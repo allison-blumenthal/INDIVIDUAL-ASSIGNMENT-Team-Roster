@@ -25,9 +25,16 @@ function Home() {
       </Head>
       <h1>Welcome to LuckyDog Daycare!</h1>
       <h5>Click here to see all of our adorable dogs!</h5>
-      <Link href="/dogs" passHref>
-        <Button>LuckyDogs</Button>
-      </Link>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <Link href="/dogs" passHref>
+          <Button className="view-btn">LuckyDogs</Button>
+        </Link>
+      </div>
       <div className="d-flex flex-wrap">
         {locations.map((location) => (
           <LocationCard key={location.firebaseKey} locationObj={location} onUpdate={getAllTheLocations} />

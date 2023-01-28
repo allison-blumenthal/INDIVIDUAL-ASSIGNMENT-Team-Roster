@@ -110,8 +110,14 @@ function DogForm({ dogObj }) {
           }
           </Form.Select>
         </FloatingLabel>
-
-        <Button type="submit">{dogObj.firebaseKey ? 'Update' : 'Add'} Dog</Button>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button className="view-btn" type="submit">{dogObj.firebaseKey ? 'Update' : 'Add'} Dog</Button>
+        </div>
       </Form>
     </>
   );

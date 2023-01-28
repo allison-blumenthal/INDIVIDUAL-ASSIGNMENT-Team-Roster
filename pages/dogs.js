@@ -31,7 +31,14 @@ export default function ShowOurDogs() {
         <title>Dogs</title>
       </Head>
       <h1>LuckyDog Daycare Doggos</h1>
-      <input type="text" placeholder="Search" onChange={(e) => setQuery(e.target.value)} />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <input type="text" placeholder="Search" onChange={(e) => setQuery(e.target.value)} />
+      </div>
       <div className="d-flex flex-wrap">
         {filteredDogs.map((dog) => (
           <DogCard key={dog.firebaseKey} dogObj={dog} onUpdate={getAllTheDogs} />

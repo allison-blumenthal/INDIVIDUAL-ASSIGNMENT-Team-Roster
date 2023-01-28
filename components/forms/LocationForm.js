@@ -71,8 +71,14 @@ function LocationForm({ locationObj }) {
             required
           />
         </FloatingLabel>
-
-        <Button type="submit">{locationObj.firebaseKey ? 'Update' : 'Add'} Location</Button>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button className="view-btn" type="submit">{locationObj.firebaseKey ? 'Update' : 'Add'} Location</Button>
+        </div>
       </Form>
     </>
   );
