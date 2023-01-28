@@ -38,5 +38,29 @@
     "characteristics":"Escape-artist, beer lover, inhales toys",
     "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
     "location_id": "-NMo49qezsxkrjvhne96"
+  },
+  "-NMq6YqUvVMZ26Jnwfib": {
+    "firebaseKey": "-NMq6YqUvVMZ26Jnwfib",
+    "name":"Oliver",
+    "image":"http://lovelycanecorsoforsale.com/wp-content/uploads/2022/03/597.jpg",
+    "characteristics":"Loner at daycare, but will do anything for a treat.",
+    "uid": "8keJ8InNqJaY98EmedDIhd0aNHi1",
+    "location_id": "-NMq5XFG_V5jw2b1IN_t"
+  },
+  "-NMq66C8587ITVqWd3tE": {
+    "firebaseKey": "-NMq66C8587ITVqWd3tE",
+    "name":"Juniper",
+    "image":"https://i.pinimg.com/736x/8f/77/1a/8f771ae97b8d164a59c1cadf5749fc7d.jpg",
+    "characteristics":"Goofball, snuggler, will sneak popcorn.",
+    "uid": "8keJ8InNqJaY98EmedDIhd0aNHi1",
+    "location_id": "-NMq5QaWNDahUtmT_D67"
+  },
+  "-NMq5q7KzCCW5P3xFmsS": {
+    "firebaseKey": "-NMq5q7KzCCW5P3xFmsS",
+    "name":"Watermelon",
+    "image":"https://vcahospitals.com/-/media/2/vca/images/lifelearn-images-foldered/9649/obese_dog.ashx",
+    "characteristics":"Will kill for fruit, has the farts to prove it.",
+    "uid": "8keJ8InNqJaY98EmedDIhd0aNHi1",
+    "location_id": "-NMq5XFG_V5jw2b1IN_t"
   }
 }
