@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from '../public/assets/images/logo.png';
+import Image from 'next/image';
+import logo from '../src/assets/images/logo.png';
 
-function Logo() {
-  return <img src={logo} alt="Logo" />;
+export default function Logo() {
+  return (
+    <>
+      <Image src={logo} alt="Logo" width="600px" height="600px" />
+    </>
+  );
 }
-
-export default Logo;
