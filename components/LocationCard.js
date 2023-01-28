@@ -2,12 +2,12 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { deleteSingleLocation } from '../api/locationData';
+import { deleteLocationDogs } from '../api/mergedData';
 
 export default function LocationCard({ locationObj, onUpdate }) {
   const deleteThisLocation = () => {
     if (window.confirm(`Delete ${locationObj.location_name}?`)) {
-      deleteSingleLocation(locationObj.firebaseKey).then(() => onUpdate());
+      deleteLocationDogs(locationObj.firebaseKey).then(() => onUpdate());
     }
   };
 
