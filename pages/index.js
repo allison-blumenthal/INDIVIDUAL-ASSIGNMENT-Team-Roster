@@ -24,9 +24,9 @@ function Home() {
         <title>LuckyDog Daycare</title>
       </Head>
       <h1>Welcome to LuckyDogs Daycare!</h1>
-      <h2>Click here to see all of our adorable dogs!</h2>
+      <h5>Click here to see all of our adorable dogs!</h5>
       <Link href="/dogs" passHref>
-        <Button>Our Dogs</Button>
+        <Button>LuckyDogs</Button>
       </Link>
       <div className="d-flex flex-wrap">
         {locations.map((location) => (
