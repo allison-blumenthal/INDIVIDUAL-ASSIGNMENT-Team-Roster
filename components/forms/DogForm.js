@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { FloatingLabel, Form, Button } from 'react-bootstrap';
 import { useAuth } from '../../utils/context/authContext';
 import { createDog, updateDog } from '../../api/dogData';
+import { getLocations } from '../../api/locationData';
 
 const initialState = {
   name: '',
@@ -13,10 +14,13 @@ const initialState = {
 
 function DogForm({ dogObj }) {
   const [formInput, setFormInput] = useState(initialState);
+  const [locations, setLocations] = useState([]);
   const router = useRouter();
   const { user } = useAuth();
 
   useEffect(() => {
+    getLocations(user.uid).then(setLocations);
+
     if (dogObj.firebaseKey) setFormInput(dogObj);
   }, [dogObj, user]);
 
@@ -32,7 +36,7 @@ function DogForm({ dogObj }) {
     e.preventDefault();
     if (dogObj.firebaseKey) {
       updateDog(formInput)
-        .then(() => router.push('/ourdogs'));
+        .then(() => router.push('/dogs'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createDog(payload).then(({ name }) => {
@@ -40,7 +44,7 @@ function DogForm({ dogObj }) {
 
         updateDog(patchPayload);
       }).then(() => {
-        router.push('/ourdogs');
+        router.push('/dogs');
       });
     }
   };
@@ -84,6 +88,29 @@ function DogForm({ dogObj }) {
           />
         </FloatingLabel>
 
+        <FloatingLabel controlId="floatingSelect" label="Location">
+          <Form.Select
+            aria-label="Location"
+            name="location_id"
+            onChange={handleChange}
+            className="mb-3"
+            value={dogObj.location_id}
+            required
+          >
+            <option value="">Select a Location</option>
+            {
+            locations.map((location) => (
+              <option
+                key={location.firebaseKey}
+                value={location.firebaseKey}
+              >
+                {location.location_name}
+              </option>
+            ))
+          }
+          </Form.Select>
+        </FloatingLabel>
+
         <Button type="submit">{dogObj.firebaseKey ? 'Update' : 'Add'} Dog</Button>
       </Form>
     </>
@@ -96,6 +123,7 @@ DogForm.propTypes = {
     image: PropTypes.string,
     characteristics: PropTypes.string,
     firebaseKey: PropTypes.string,
+    location_id: PropTypes.string,
   }),
 };
 

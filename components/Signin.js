@@ -13,10 +13,9 @@ function Signin() {
         margin: '0 auto',
       }}
     >
-      <h1>Hi there!</h1>
-      <p>Click the button below to login!</p>
+      <h1>LuckyDogs Daycare</h1>
       <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
-        Sign In
+        Login
       </Button>
     </div>
   );

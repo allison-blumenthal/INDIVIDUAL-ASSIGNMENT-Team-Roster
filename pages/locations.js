@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { Button } from 'react-bootstrap';
 import Head from 'next/head';
-import LocationCard from '../components/LocationCard';
-import { getLocations } from '../api/locationData';
 import { useAuth } from '../utils/context/authContext';
+import { getLocations } from '../api/locationData';
+import LocationCard from '../components/LocationCard';
 
-function Home() {
+export default function ShowLocations() {
   const [locations, setLocations] = useState([]);
   const { user } = useAuth();
 
@@ -21,13 +19,9 @@ function Home() {
   return (
     <>
       <Head>
-        <title>LuckyDog Daycare</title>
+        <title>LuckyDog Locations</title>
       </Head>
-      <h1>Welcome to LuckyDogs Daycare!</h1>
-      <h5>Click here to see all of our adorable dogs!</h5>
-      <Link href="/dogs" passHref>
-        <Button>LuckyDogs</Button>
-      </Link>
+      <h1>LuckyDog Daycare Locations</h1>
       <div className="d-flex flex-wrap">
         {locations.map((location) => (
           <LocationCard key={location.firebaseKey} locationObj={location} onUpdate={getAllTheLocations} />
@@ -36,5 +30,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

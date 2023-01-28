@@ -4,34 +4,39 @@
     "name":"Clover",
     "image":"https://www.thesprucepets.com/thmb/trX1QBJE__Ohc6_eu58ksKh3uh8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3-legged-pit-bull-495594067-5beb3eb0c9e77c00514276b4.jpg",
     "characteristics":"3-legged wonder dog, will smother all with affection and kisses",
-    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
+    "location_id": "-NMo49qdP93JP1vKGZlr"
   },
   "-NMKqFHWDRanbAeIXNq-": {
     "firebaseKey": "-NMKqFHWDRanbAeIXNq-",
     "name":"Charlie",
     "image":"https://www.akc.org/wp-content/uploads/2020/11/Bernese-Mountain-Dog-head-portrait-outdoors.jpg",
     "characteristics":"80-lb puppy, thinks he's a lap dog",
-    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
+    "location_id": "-NMo49qbwra67owAFHjA"
   },
   "-NMKqFHYxm8eVPNyQ5sM": {
     "firebaseKey": "-NMKqFHYxm8eVPNyQ5sM",
     "name":"Fiona",
     "image":"https://www.dogbreedinfo.com/images32/PariahDogPepper7YearsOld.jpg",
     "characteristics":"Loves cats and babies",
-    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
+    "location_id": "-NMo49qezsxkrjvhne96"
   },
   "-NMKqFH_WUyyzDBw7Ptf": {
     "firebaseKey": "-NMKqFH_WUyyzDBw7Ptf",
     "name":"Jackson",
     "image":"https://thesmartcanine.com/wp-content/uploads/2019/08/scottish-terrier-black-dog.jpg",
     "characteristics":"Mostly blind, obsessed with chicken, loves to snuggle",
-    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
+    "location_id": "-NMo49qdP93JP1vKGZlr"
   },
   "-NMKqFHb8Jl9tlXLiyFj": {
     "firebaseKey": "-NMKqFHb8Jl9tlXLiyFj",
     "name":"Freddie",
     "image":"https://a-z-animals.com/media/2019/11/Australian-Kelpie-close-up-2.jpg",
     "characteristics":"Escape-artist, beer lover, inhales toys",
-    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+    "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82",
+    "location_id": "-NMo49qezsxkrjvhne96"
   }
 }
