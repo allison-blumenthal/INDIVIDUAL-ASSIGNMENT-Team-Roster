@@ -18,12 +18,12 @@ export default function LocationCard({ locationObj, onUpdate }) {
         <Card.Body>
           <Card.Title>{locationObj.location_name}</Card.Title>
           <Link href={`/location/${locationObj.firebaseKey}`} passHref>
-            <Button variant="warning">VIEW</Button>
+            <Button variant="warning" className="view-btn">VIEW</Button>
           </Link>
           <Link href={`/location/edit/${locationObj.firebaseKey}`} passHref>
-            <Button variant="info">EDIT</Button>
+            <Button variant="info" className="edit-btn">EDIT</Button>
           </Link>
-          <Button variant="danger" onClick={deleteThisLocation} className="m-2">DELETE
+          <Button variant="danger" onClick={deleteThisLocation} className="delete-btn">DELETE
           </Button>
         </Card.Body>
       </Card>

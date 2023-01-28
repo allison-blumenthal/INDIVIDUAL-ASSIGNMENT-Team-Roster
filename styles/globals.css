@@ -1,11 +1,11 @@
 @import 'bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Irish Grover', cursive;
 }
 
 a {
@@ -18,5 +18,77 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color: black;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  text-align: center
+}
+
+/* // buttons  */
+#dogs-btn, #locations-btn, #new-dogs-btn, #new-location-btn, #logout-btn, #login-btn {
+  margin: 10px;
+  color: black;
+}
+
+#login-btn {
+  background-color: #2b9348;
+  border: #2b9348;
+  color: white;
+}
+
+#logout-btn {
+  background-color: #AE2012;
+  border: #AE2012;
+  color: white;
+}
+
+#dogs-btn, #new-dogs-btn {
+  background-color: #fb8500;
+  border: #fb8500;
+  color: white;
+}
+
+#locations-btn, #new-location-btn {
+  background-color: #E76F51;
+  border: #E76F51;
+  color: white;
+}
+
+#dogs-btn:hover, #locations-btn:hover, #new-dogs-btn:hover, #new-location-btn:hover, #logout-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#login-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.view-btn {
+  margin: 10px;
+  background-color: #2b9348;
+  border: #2b9348;
+  color: white;
+}
+
+.edit-btn {
+  margin: 10px;
+  background-color: #fb8500;
+  border: #fb8500;
+  color: white;
+}
+
+.delete-btn {
+  margin: 10px;
+  background-color: #AE2012;
+  border: #AE2012;
+}
+
+.view-btn:hover, .edit-btn:hover, .delete-btn:hover {
+  background-color: black;
+  color: white;
 }

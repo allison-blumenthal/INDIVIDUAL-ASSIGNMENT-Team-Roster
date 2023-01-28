@@ -5,31 +5,40 @@ import {
   Navbar, Container, Nav, Button,
 } from 'react-bootstrap';
 import { signOut } from '../utils/auth';
+import Logo from './Logo';
 
 export default function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand>LuckyDog Daycare</Navbar.Brand>
+          <Navbar.Brand>
+            <div style={{
+              padding: '0px',
+              maxWidth: '100px',
+              margin: '0',
+            }}
+            >
+              <Logo />
+            </div>
+          </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
-            <Link passHref href="/locations">
-              <Nav.Link>Locations</Nav.Link>
-            </Link>
             <Link passHref href="/dogs">
-              <Nav.Link>Dogs</Nav.Link>
+              <Button variant="success" size="lg" id="dogs-btn">Dogs</Button>
+            </Link>
+            <Link passHref href="/locations">
+              <Button variant="success" size="lg" id="locations-btn">Locations</Button>
             </Link>
             <Link passHref href="/dog/new">
-              <Nav.Link>New Dog</Nav.Link>
+              <Button variant="success" size="lg" id="new-dogs-btn">New Dog</Button>
             </Link>
             <Link passHref href="/location/new">
-              <Nav.Link>New Location</Nav.Link>
+              <Button variant="success" size="lg" id="new-location-btn">New Location</Button>
             </Link>
-            <Button variant="danger" onClick={signOut}>Logout</Button>
+            <Button variant="danger" size="lg" onClick={signOut} id="logout-btn">Logout</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

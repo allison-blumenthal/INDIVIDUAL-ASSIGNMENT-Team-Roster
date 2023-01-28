@@ -16,5 +16,17 @@
     "location_name": "LuckyDogs–New York City",
     "location_image": "https://www.politico.com/dims4/default/8554513/2147483647/strip/true/crop/2000x1333+0+0/resize/1290x860!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F36%2F98%2F5ceb5cf3473c91620bb5bea1254d%2Flede1-200331-blesener-politico-009.jpg",
     "uid": "M9dxn3IRaQgpnsSnJeJ3b8kDPk82"
+  },
+  "-NMq5XFG_V5jw2b1IN_t": {
+    "firebaseKey": "-NMq5XFG_V5jw2b1IN_t",
+    "location_name": "LuckyDogs–San Francisco",
+    "location_image": "https://cdn.travelpulse.com/images/d3a9edf4-a957-df11-b491-006073e71405/e864929d-127a-4caf-9a15-7f9cd45160f0/630x355.jpg",
+    "uid": "8keJ8InNqJaY98EmedDIhd0aNHi1"
+  },
+  "-NMq5QaWNDahUtmT_D67": {
+    "firebaseKey": "-NMq5QaWNDahUtmT_D67",
+    "location_name": "LuckyDogs–Austin",
+    "location_image": "https://blog-www.pods.com/wp-content/uploads/2022/08/resized_FI_GettyImages-1354082462_Sixth-Street-music-and-entertainment-district-Austin-TX.jpg",
+    "uid": "8keJ8InNqJaY98EmedDIhd0aNHi1"
   }
 }

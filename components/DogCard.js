@@ -28,9 +28,9 @@ export default function DogCard({ dogObj, onUpdate }) {
           <p className="card-text bold">{dogObj.characteristics}</p>
           <h6> {locationDetails.location_name}</h6>
           <Link href={`/dog/edit/${dogObj.firebaseKey}`} passHref>
-            <Button variant="info">EDIT</Button>
+            <Button variant="info" className="edit-btn">EDIT</Button>
           </Link>
-          <Button variant="danger" onClick={deleteThisDog} className="m-2">DELETE
+          <Button variant="danger" onClick={deleteThisDog} className="delete-btn">DELETE
           </Button>
         </Card.Body>
       </Card>
