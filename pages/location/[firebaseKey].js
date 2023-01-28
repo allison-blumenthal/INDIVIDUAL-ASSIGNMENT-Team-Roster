@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import viewLocationDetails from '../../api/mergedData';
+import { viewLocationDetails } from '../../api/mergedData';
 import DogCard from '../../components/DogCard';
 
 export default function ViewLocation() {
