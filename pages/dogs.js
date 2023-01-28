@@ -28,7 +28,7 @@ export default function ShowOurDogs() {
   return (
     <>
       <Head>
-        <title>Our LuckyDogs</title>
+        <title>Dogs</title>
       </Head>
       <h1>LuckyDog Daycare Doggos</h1>
       <input type="text" placeholder="Search" onChange={(e) => setQuery(e.target.value)} />

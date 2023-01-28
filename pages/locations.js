@@ -19,7 +19,7 @@ export default function ShowLocations() {
   return (
     <>
       <Head>
-        <title>LuckyDog Locations</title>
+        <title>Locations</title>
       </Head>
       <h1>LuckyDog Daycare Locations</h1>
       <div className="d-flex flex-wrap">

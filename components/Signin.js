@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { signIn } from '../utils/auth';
+import Logo from './Logo';
 
 function Signin() {
   return (
@@ -13,7 +14,9 @@ function Signin() {
         margin: '0 auto',
       }}
     >
-      <h1>LuckyDogs Daycare</h1>
+      <div>
+        <Logo />
+      </div>
       <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
         Login
       </Button>

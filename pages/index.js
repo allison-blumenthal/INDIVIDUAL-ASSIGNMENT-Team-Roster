@@ -23,7 +23,7 @@ function Home() {
       <Head>
         <title>LuckyDog Daycare</title>
       </Head>
-      <h1>Welcome to LuckyDogs Daycare!</h1>
+      <h1>Welcome to LuckyDog Daycare!</h1>
       <h5>Click here to see all of our adorable dogs!</h5>
       <Link href="/dogs" passHref>
         <Button>LuckyDogs</Button>
