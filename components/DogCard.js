@@ -30,7 +30,7 @@ export default function DogCard({ dogObj, onUpdate }) {
           <Link href={`/dog/edit/${dogObj.firebaseKey}`} passHref>
             <Button variant="info">EDIT</Button>
           </Link>
-          <Button variant="danger" onClick={deleteThisDog} className="m-2">DELETE
+          <Button variant="danger" onClick={deleteThisDog} className="delete-btn">DELETE
           </Button>
         </Card.Body>
       </Card>

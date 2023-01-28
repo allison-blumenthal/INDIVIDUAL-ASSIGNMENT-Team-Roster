@@ -21,16 +21,66 @@ body {
   background-color: black;
 }
 
-#login-button {
-  background-color: #A3B18A;
-  border: #A3B18A;
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* // buttons  */
+#dogs-btn, #locations-btn, #new-dogs-btn, #new-location-btn, #logout-btn, #login-btn {
+  margin: 10px;
   color: black;
 }
 
-#login-button:hover {
-  background-color: white;
+#login-btn {
+  background-color: #A3B18A;
+  border: #A3B18A;
 }
 
-h1, h2, h3, h4, h5, h6 {
+#logout-btn {
+  background-color: #AE2012;
+  border: #AE2012;
+  color: white;
+}
+
+#dogs-btn, #new-dogs-btn {
+  background-color: #F4A261;
+  border: #F4A261;
+  color: white;
+}
+
+#locations-btn, #new-location-btn {
+  background-color: #E76F51;
+  border: #E76F51;
+  color: white;
+}
+
+#dogs-btn:hover, #locations-btn:hover, #new-dogs-btn:hover, #new-location-btn:hover,  #login-btn:hover, #logout-btn:hover {
+  background-color: black;
+}
+
+
+.view-btn {
+  margin: 10px;
+  background-color: #A3B18A;
+  border: #A3B18A;
+  color: white;
+}
+
+.edit-btn {
+  margin: 10px;
+  background-color: #F4A261;
+  border: #F4A261;
+  color: white;
+}
+
+.delete-btn {
+  margin: 10px;
+  background-color: #AE2012;
+  border: #AE2012;
+}
+
+.view-btn:hover, .edit-btn:hover, .delete-btn:hover {
+  background-color: black;
   color: white;
 }
