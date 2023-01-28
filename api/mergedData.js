@@ -1,14 +1,10 @@
-import { getSingleDog } from './dogData';
-import { getSingleLocation } from './locationData';
+import { getSingleLocation, getLocationDogs } from './locationData';
 
-const viewDogDetails = (dogFirebaseKey) => new Promise((resolve, reject) => {
-  getSingleDog(dogFirebaseKey)
-    .then((dogObj) => {
-      getSingleLocation(dogObj.location_id)
-        .then((locationObj) => {
-          resolve({ locationObj, ...dogObj });
-        });
+const viewLocationDetails = (locationFirebaseKey) => new Promise((resolve, reject) => {
+  Promise.all([getSingleLocation(locationFirebaseKey), getLocationDogs(locationFirebaseKey)])
+    .then(([locationObj, locationDogsArray]) => {
+      resolve({ ...locationObj, dogs: locationDogsArray });
     }).catch((error) => reject(error));
 });
 
-export default { viewDogDetails };
+export default viewLocationDetails;

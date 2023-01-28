@@ -4,7 +4,6 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { deleteDog } from '../api/dogData';
-// import viewDogDetails from '../api/mergedData';
 import { getSingleLocation } from '../api/locationData';
 
 export default function DogCard({ dogObj, onUpdate }) {

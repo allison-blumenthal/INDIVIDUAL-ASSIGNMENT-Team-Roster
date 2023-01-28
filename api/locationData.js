@@ -76,9 +76,9 @@ const updateLocation = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// GET LOCATION DOGS
+// GET A SINGLE LOCATION'S DOGS
 const getLocationDogs = (locationFirebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${dbUrl}/dogs.json?orderBy="team_id"&equalTo="${locationFirebaseKey}"`, {
+  fetch(`${dbUrl}/dogs.json?orderBy="location_id"&equalTo="${locationFirebaseKey}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

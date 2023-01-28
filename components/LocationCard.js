@@ -17,6 +17,9 @@ export default function LocationCard({ locationObj, onUpdate }) {
         <Card.Img variant="top" src={locationObj.location_image} alt={locationObj.location_name} style={{ height: '200px' }} />
         <Card.Body>
           <Card.Title>{locationObj.location_name}</Card.Title>
+          <Link href={`/location/${locationObj.firebaseKey}`} passHref>
+            <Button variant="warning">VIEW</Button>
+          </Link>
           <Link href={`/location/edit/${locationObj.firebaseKey}`} passHref>
             <Button variant="info">EDIT</Button>
           </Link>
